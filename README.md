@@ -59,8 +59,6 @@ bash launch.sh
 
 Our training mainly follows [Huggingface Trainer](https://github.com/huggingface/transformers/tree/main/examples/pytorch/language-modeling) code base. Please refer to that repo for more details.
 
-We also
-
 
 <a name="citation"></a>
 
