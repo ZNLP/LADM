@@ -1,13 +1,13 @@
-dataset_root="/public/zhangjiajun/huggingface/datasets"
-model_root="/public/zhangjiajun/huggingface/pretrained_model"
+dataset_root="/data_jhchen/huggingface/datasets"
+model_root="/data_jhchen/huggingface/pretrained_model"
 
 ### 1. Calculate CDS for each 32k sample
 
-# Debug Test
+# For toy dataset test
 
 # export CUDA_VISIBLE_DEVICES=0
 # python score.py \
-#     --chunked_data_path "$dataset_root/UltraRonin/pile-LlamaTokenizerFast-32k-truncated" \
+#     --chunked_data_path "$dataset_root/UltraRonin/pile-LlamaTokenizerFast-32k-truncated-toy" \
 #     --model_path "$model_root/UltraRonin/Long-Attn-Calculator" \
 #     --model_tag "Long-Attn-Calculator" \
 #     --attn_chunk_size 128 \
@@ -58,4 +58,4 @@ process_batch 0 $((num_gpus - 1))
 
 python filter.py \
     --original_data_path "$dataset_root/UltraRonin/pile-LlamaTokenizerFast-32k" \
-    --target_path "$dataset_root/UltraRonin/pile-LlamaTokenizerFast-32k-truncated/Long-Attn-Calculator/chunk128-d_afs4-d_cds4-test"
+    --target_path "$dataset_root/UltraRonin/pile-LlamaTokenizerFast-32k-truncated/Long-Attn-Calculator/chunk128-d_afs4-d_cds4"

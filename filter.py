@@ -16,8 +16,8 @@ from loguru import logger
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--original_data_path", type=str, default="/public/zhangjiajun/huggingface/datasets/monology/pile-LlamaTokenizerFast-32k")
-    parser.add_argument("--target_path", type=str, default="/public/zhangjiajun/jhchen/huggingface/datasets/monology/pile-LlamaTokenizerFast-32k-truncated/TinyLlama_v1.1/pile-LlamaTokenizerFast-32k_seed42/checkpoint-5000/stride512-chunk128-interval512")
+    parser.add_argument("--original_data_path", type=str, required=True)
+    parser.add_argument("--target_path", type=str, required=True)
 
     return parser.parse_args()
 

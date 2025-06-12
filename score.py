@@ -18,9 +18,9 @@ from modeling_llama2 import LlamaForCausalLM, LlamaModel
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--chunked_data_path", type=str, default="/public/zhangjiajun/huggingface/datasets/monology/pile-LlamaTokenizerFast-32k-truncated")
-    parser.add_argument("--model_path", type=str, default="/public/zhangjiajun/jhchen/storage/LongDepend/outputs/LLM/TinyLlama/TinyLlama_v1.1/pile-LlamaTokenizerFast-32k_seed42/checkpoint-5000")
-    parser.add_argument("--model_tag", type=str, default="TinyLlama_v1.1/pile-LlamaTokenizerFast-32k_seed42/checkpoint-5000")
+    parser.add_argument("--chunked_data_path", type=str, required=True)
+    parser.add_argument("--model_path", type=str, required=True)
+    parser.add_argument("--model_tag", type=str, required=True)
     parser.add_argument("--attn_chunk_size", type=int, default=128)
     parser.add_argument("--d_afs", type=int, default=4)
     parser.add_argument("--d_cds", type=int, default=4)
@@ -51,7 +51,7 @@ def main(args):
     print(part_chunked_datasets)
 
     if args.test:
-        pdb.set_trace()
+        # pdb.set_trace()
         
         tokenizer = AutoTokenizer.from_pretrained(args.model_path)
         model = AutoModelForCausalLM.from_pretrained(
