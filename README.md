@@ -41,7 +41,7 @@ You can use our [Long Attention Calculator](https://huggingface.co/UltraRonin/Lo
 
 ## ⏳ Data Selection
 
-If you run this script with our [toy dataset](https://huggingface.co/datasets/UltraRonin/pile-LlamaTokenizerFast-32k-truncated-toy), you will get similar CDS scores in file [./toy_scores.json](https://github.com/ZNLP/LADM/blob/main/toy_scores.json).
+If you run the following script with our [toy dataset](https://huggingface.co/datasets/UltraRonin/pile-LlamaTokenizerFast-32k-truncated-toy), you will get similar CDS scores in file [./toy_scores.json](https://github.com/ZNLP/LADM/blob/main/toy_scores.json).
 
 ```bash
 bash launch_toy.sh
