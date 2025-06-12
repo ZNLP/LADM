@@ -23,7 +23,7 @@ Long-context modeling has drawn more and more attention in the area of Large Lan
 ## 📚 Preparation
 
 ### Data Preparation
-Please prepare long-context pre-training dataset truncated to 32k tokens like following format, see [here](https://huggingface.co/datasets/UltraRonin/pile-LlamaTokenizerFast-32k-truncated-toy) for examples.
+Please prepare long-context pre-training dataset truncated to 32k tokens in the following format, see [here](https://huggingface.co/datasets/UltraRonin/pile-LlamaTokenizerFast-32k-truncated-toy) for examples.
 ```
 DatasetDict({
     train: Dataset({
@@ -47,7 +47,7 @@ If you run the following script with our [toy dataset](https://huggingface.co/da
 bash launch_toy.sh
 ```
 
-For fully usage:
+For full usage:
 ```bash
 bash launch.sh
 ```
