@@ -53,7 +53,7 @@ For full usage:
 bash launch.sh
 ```
 
-<a name="traning"></a>
+<a name="training"></a>
 
 ## 📈 Training
 
