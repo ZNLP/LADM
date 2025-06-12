@@ -7,6 +7,7 @@
 - [🌐 Overview](#overview)
 - [📚 Preparation](#preparation)
 - [⏳ Data Selection](#data_selection)
+- [📈 Training](#training)
 - [📝 Citation](#citation)
 
 
@@ -51,6 +52,15 @@ For full usage:
 ```bash
 bash launch.sh
 ```
+
+<a name="traning"></a>
+
+## 📈 Training
+
+Our training mainly follows [Huggingface Trainer](https://github.com/huggingface/transformers/tree/main/examples/pytorch/language-modeling) code base. Please refer to that repo for more details.
+
+We also
+
 
 <a name="citation"></a>
 
